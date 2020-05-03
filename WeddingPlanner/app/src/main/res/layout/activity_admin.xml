@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".AdminMainActivity"
+    android:background="@drawable/theme_2">
+    <TextView
+        android:id="@+id/admin_category_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Choose a category to add service!"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity"
+    android:background="@drawable/theme_2"
+    android:layout_below="@+id/admin_category_title"
+    android:layout_above="@+id/bottom_navigation_admin_onlyhome_addproduct"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/buttonLayout_catering"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_catering"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/catering"
+                android:clickable="true"
+                android:focusable="true" />
+            <TextView
+                android:id="@+id/textView_catering"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:text="Catering"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="italic"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/catering_button"
+            android:layout_marginTop="10dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout_venues"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/catering_button"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_venues"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/venues"
+                android:clickable="true"
+                android:focusable="true" />
+            <TextView
+                android:id="@+id/textView_venues"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:text="Venues"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="italic"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/venues_button"
+            android:layout_marginTop="10dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout_photography"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/venues_button"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_photography"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/photography"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <TextView
+                android:id="@+id/textView_photography"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:text="Photography"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="italic"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/photography_button"
+            android:layout_marginTop="10dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout_jewellery"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/photography_button"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_jewellery"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/fui_transparent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/jewellery_2"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <TextView
+                android:id="@+id/textView_jewellery"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:text="Jewellery"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="italic"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/jewellery_button"
+            android:layout_marginTop="10dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout_transportation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/jewellery_button"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_transportation"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_directions_bus_black_24dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <TextView
+                android:id="@+id/textView_transportation"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:text="Transportation"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="italic"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/transportation_button"
+            android:layout_marginTop="10dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout_cards"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/transportation_button"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_cards"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/wedding_cards_2"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <TextView
+                android:id="@+id/textView_cards"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:text="Wedding Cards"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="italic"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/cards_button"
+            android:layout_marginTop="10dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout_bridal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cards_button"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_bridal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/bridal_accessories"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <TextView
+                android:id="@+id/textView_bridal"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:text="Bridal Accessories"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="italic"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/bridal_button"
+            android:layout_marginTop="10dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout_groom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/bridal_button"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_groom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/groom_accessories"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <TextView
+                android:id="@+id/textView_groom"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:text="Groom Accessories"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="italic"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/groom_button"
+            android:layout_marginTop="10dp"
+            android:background="#000000" />
+
+    </LinearLayout>
+</ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_admin_onlyhome_addproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu_onlyhome"
+        android:background="@color/cardview_dark_background"
+        />
+</RelativeLayout>
+
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/theme_2">
+
+
+    <EditText
+        android:id="@+id/email_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textColor="@color/cardview_dark_background"
+        />
+
+    <EditText
+        android:id="@+id/pass_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="@color/cardview_dark_background"
+        android:layout_below="@+id/email_login"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/cardview_dark_background"
+        />
+
+    <Button
+        android:id="@+id/login_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="#ffe5aa"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pass_login"
+        android:layout_marginTop="20dp"
+        />
+
+    <ToggleButton
+        android:id="@+id/toggle_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#ffe5aa"
+        android:paddingHorizontal="45dp"
+        android:text="ToggleButton"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_dark_background"
+        android:textOff="Login as an admin?"
+        android:textOn="Login as an user?" />
+
+
+</RelativeLayout>

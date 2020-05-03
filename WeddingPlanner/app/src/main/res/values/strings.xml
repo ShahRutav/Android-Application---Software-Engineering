@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Wedding Planner</string>
+
+    <string name="facebook_application_id" translatable="false">219916719308770</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb219916719308770</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="dropdown_array">
+        <item>Main</item>
+        <item>Settings</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string-array name="dropdown_array_admin">
+        <item>Main</item>
+        <item>Your Services</item>
+        <item>Your Blogs</item>
+        <item>Settings</item>
+        <item>Logout</item>
+    </string-array>
+</resources>

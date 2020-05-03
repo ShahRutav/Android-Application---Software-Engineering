@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminBlogActivity"
+    android:background="@drawable/theme_2">
+    <TextView
+        android:id="@+id/admin_blog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Write a Blog and Advertise!"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/admin_blog_title"
+        android:layout_above="@+id/bottom_navigation_admin_only_home_blog"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+            <ImageView
+                android:id="@+id/select_blog_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:cropToPadding="false"
+                android:src="@drawable/photography"
+                />
+            <EditText
+                android:id="@+id/blog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:layout_gravity="center"
+                android:hint="Blog Title"
+                android:textColorHint="@color/cardview_dark_background"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="20dp"
+                />
+
+            <EditText
+                android:id="@+id/blog_description"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:inputType="textMultiLine"
+                android:hint="Description"
+                android:textColorHint="@color/cardview_dark_background"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="20dp"
+                />
+
+            <Button
+                android:id="@+id/add_blog_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Blog"
+                android:paddingHorizontal="20dp"
+                android:background="#ffe5aa"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_admin_only_home_blog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu_only_home"
+        android:background="@color/cardview_dark_background"
+        />
+
+</RelativeLayout>
