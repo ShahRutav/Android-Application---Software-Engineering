@@ -1,4 +1,5 @@
 # Android-Application---Software-Engineering
+This project was build for course CS29006 under Dr. Debasis Samanta. Link to course(theory) website https://cse.iitkgp.ac.in/~dsamanta/courses/se/ .<br/>
 A common platform to organize all your marriage related activities, **One Stop Wedding Planner**.
 This user friendly application allows you to provide a service and create a brand name in this industory in a much easier way.
 Also, a platform where you can completely rely upon for all your marriage related activities. 
