@@ -12,10 +12,12 @@ You can register/login yourself as an admin as well as an user
 <hidden>
 <img src = "/WeddingPlanner/Final_SS/Login1.jpg" width=130 />
 <hidden>
+  
 <h5>Admin Activities </h5>
 Admin can add a service related to any particular event of wedding, in any of the various categories available.
-At the same time, admin can write a blog in general in order to advertize it's service or the brand name.
-Under Your Services and Your Blogs admin can view his/her personal services and blogs respectively.
+At the same time, an admin can write a blog in general in order to advertise its service or the brand name.
+Under "Your Services" and "Your Blogs" admin can view his/her personal services and blogs respectively.
+  
 <p float="left">
   <img src = "/WeddingPlanner/Final_SS/admin1.jpg" width=130 />
   <img src = "/WeddingPlanner/Final_SS/admin2.jpg" width=130 />
@@ -23,10 +25,12 @@ Under Your Services and Your Blogs admin can view his/her personal services and 
   <img src = "/WeddingPlanner/Final_SS/admin4.jpg" width=130 />
   <img src = "/WeddingPlanner/Final_SS/admin5.jpg" width=130 />
 </p>
+
 <h5>User Activities</h5>
+
 From the user end, one can view the services offered by the vendors as well as explore new ideas by reading blogs.
-User can mark products as favourites and view them later at ease.
-Also, user can create a checklist to keep a track of all kinds of activities to be performed, at the same time activities that are completed.
+Users can mark products as favourites and view them later at ease.
+Also, users can create a checklist to keep a track of all kinds of activities to be performed, at the same time activities that are completed.
 <p float="left">
   <img src = "/WeddingPlanner/Final_SS/user1.jpg" width=130 />
   <img src = "/WeddingPlanner/Final_SS/user2.jpg" width=130 />
@@ -35,3 +39,8 @@ Also, user can create a checklist to keep a track of all kinds of activities to 
   <img src = "/WeddingPlanner/Final_SS/user5.jpg" width=130 />
   <img src = "/WeddingPlanner/Final_SS/user6.jpg" width=130 />
 </p>
+
+<h5>Future Developments</h5>
+Add direct placement of order through this application.<br/>
+Review of various customers.<br/>
+Recommender system based on reviews of customers.
